@@ -1,0 +1,18 @@
+
+
+.container{
+    width:95%;
+    gap: 1rem;
+    color: white;
+    // background-color: rgba(135, 135, 135, 0.425);
+    // padding: .5rem 1rem;
+    margin: .5rem;
+    border-radius: .5rem;
+    height: 99vh;
+    overflow-y: scroll;
+    position: relative;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}

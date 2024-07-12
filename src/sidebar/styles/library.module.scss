@@ -1,0 +1,36 @@
+@import "../../colors.scss";
+
+.container{
+    width: 100%;
+    gap: 1rem;
+    color: white;
+    background-color: rgba(135, 135, 135, 0.425);
+    padding: .5rem 1rem;
+    margin: .5rem;
+    border-radius: .5rem;
+
+    svg{
+        width: 20px;
+    }
+
+    .titleBar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div{
+            gap: 1rem;
+            display: flex;
+        }
+    }
+
+    .playList{
+        height: 40vh;
+        background-color: rgba(150, 150, 150, 0.617);
+        border-radius: .5rem;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+}

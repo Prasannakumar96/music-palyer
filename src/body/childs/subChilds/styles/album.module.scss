@@ -1,0 +1,29 @@
+.container{
+    width: calc(100% - 15px);
+    overflow: hidden;
+    margin-top: 2rem;
+    
+    .artistsCon{
+        width: 100%;
+        display: flex;
+        overflow-x: scroll;
+        gap: 1rem;
+        .artistCard{
+            padding: .3rem;
+            border-radius: .5rem;
+            cursor: pointer;
+            &:hover{
+                background-color: #a7a7a717;
+            }
+        }
+
+        img{
+            border-radius: .5rem;
+            width: 100px;
+            height: 100px;
+        }
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.container{
+    width: 100%;
+    gap: 1rem;
+    color: #A7A7A7;
+    padding: .5rem 1rem;
+    margin: 1rem .5rem;
+    border-radius: .5rem;
+    font-size: .8rem;
+    .items{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+    }
+}

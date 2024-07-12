@@ -1,0 +1,22 @@
+@import "../../colors.scss";
+
+
+.container{
+    width: 100%;
+    gap: 1rem;
+    color: white;
+    background-color: rgba(135, 135, 135, 0.425);
+    padding: .5rem 1rem;
+    margin: .5rem;
+    border-radius: .5rem;
+    svg{
+        fill: white;
+    }
+    div{
+        padding: .5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        display: flex;
+        gap: 1rem;
+    }
+}

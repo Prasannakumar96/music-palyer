@@ -1,0 +1,16 @@
+@import "./colors.scss";
+
+.App{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    .sideBar{
+        width: 20%;
+      
+    }
+
+    .body{
+        width: 75%;
+    }
+
+}
