@@ -8,3 +8,7 @@ body{
   background-color: black;
 }
 
+.anticon svg{
+  color: red !important;
+  cursor: pointer !important;
+}

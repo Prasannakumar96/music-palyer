@@ -4,19 +4,15 @@ import Artists from './subChilds/artists'
 import Albums from './subChilds/albums'
 import { songsApi } from '../utils/urls'
 import axios from 'axios'
+import { useSelector } from 'react-redux'
+import { SearchOutlined } from '@ant-design/icons'
 
-const Body = ({inputVal , setInputVal}) => {
+const Body = () => {
 
-
-  const [songs , setSongs] = useState([])
 
   const [selectedSong , setSelectedSong] = useState({})
 
-  const getSongs = async() => {
-      const { data} = await axios.get(songsApi + inputVal)
-
-      setSongs(data.data.results)
-  }
+  const songs = useSelector((state) => state.changeVal.value)
 
 
   const playNext = () => {
@@ -24,13 +20,12 @@ const Body = ({inputVal , setInputVal}) => {
 
     setSelectedSong(songs[findIndOfCurrSong - 1])
   }
-  useEffect(()=>{
-      getSongs()
-  },[inputVal])
+
 
 
   return (
     <div className={MainBodyStyles.container}>
+      <SearchOutlined />
      {songs?.length > 0 ? 
       <div className={MainBodyStyles.songsCon}>
         {
